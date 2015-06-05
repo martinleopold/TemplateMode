@@ -77,9 +77,8 @@ public class TemplateMode extends JavaMode {
     @Override
     public ClassLoader getClassLoader() {
         for (Mode m : base.getModeList()) {
-            if (m.getClass() == JavaMode.class) {
-                JavaMode jMode = (JavaMode) m;
-                return jMode.getClassLoader();
+            if (m.getClass().getName().equals(JavaMode.class.getName())) {
+                return m.getClassLoader();
             }
         }
         return null;  // badness

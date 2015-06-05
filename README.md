@@ -12,7 +12,7 @@ Notes
 
 Requirements
 ------------
-* Processing 2.0 or later. We built from GitHub (June 22, 2013)
+* Processing 3.0 or later. We built from GitHub (June 05, 2015)
 * Apache Ant to build.
 
 Instructions
@@ -25,6 +25,8 @@ Instructions
     * If you want to run processing after building (target: run), set the path to your processing executable.
 
 * Set properties in resources/mode.properties (This is for properly identifying your mode to the mode manager in the PDE)
+
+* Include all the .jar files from the processing/java/mode folder in "lib".
 
 * Other libraries that you need in your mode can be placed in "lib". They will be added to the classpath for building and bundled with your mode.
 
